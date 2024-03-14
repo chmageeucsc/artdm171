@@ -11,31 +11,53 @@ Date: 03.14.2024
 
 <head>
 	<meta charset="UTF-8">
-	<title>Practice 3 - HTML Review</title>
+	<title>Practice 4 - CSS Styling</title>
 	<style>
-		body {
-
+		body { /*changes the background color to light blue and uses sans serif fonts*/
+			background-color: rgb(233, 230, 249);
+			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		}
-		div {
-
+		div { /*changes the background color to light blue and uses sans serif fonts*/
+			background-color: rgb(151, 189, 202);
+			border-bottom: 5px solid rgb(13, 112, 99);
+			border-top: 5px solid rgb(13, 112, 99);
 		}
-		header {
-
+		header { /*changes the background color to light blue and uses sans serif fonts*/
+			font-weight: bold;
+			text-align: center;
 		}
-		section {
-
+		section { /*changes the background color to light blue and uses sans serif fonts*/
+			background-color: azure;
+			line-height: 1.75rem;
+			margin-bottom: 0;
+			margin-left: 0;
+			margin-right: 0;
+			margin-top: 0;
+			padding-bottom: 1rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			padding-top: 1rem;
 		}
-		h1 {
-
+		h1 { /*changes the background color to teal and bigger, underlined font for the header*/
+			color: rgb(4, 48, 27);
+			font-family:Verdana, Geneva, Tahoma, sans-serif;
+			text-decoration: underline;
 		}
-		p {
-
+		p { /*changes the text color to dark blue and increases line height for readability*/
+			color: rgb(26, 26, 117);
+			line-height: 1.5rem;
 		}
-		strong {
-
+		strong { /*changes the text color to deep purple and increases font size for importance*/
+			color: rgb(106, 10, 196);
+			font-size: 1.1rem;
 		}
-		em {
-
+		em { /*bold text with overline to show importance without confusing readers about links*/
+			font-weight: bold;
+			text-decoration: overline;
+		}
+		.important { /*changes the text color to blue and uses serif fonts*/
+			color: blue;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		}
 	</style>
 </head>
@@ -54,7 +76,7 @@ Date: 03.14.2024
 		</p>
 	</header>
 	<section id="main">
-		<p><em><strong>AP</strong></em> - About those wooly mittens that U.S. Sen. Bernie Sanders wore to the presidential inauguration, sparking endless quirky memes across social media? They've helped to <strong>raise $1.8 million</strong> in the last five days for charitable organizations in Sanders' home state of Vermont, the independent senator announced Wednesday.</p>
+		<p class="important"><em><strong>AP</strong></em> - About those wooly mittens that U.S. Sen. Bernie Sanders wore to the presidential inauguration, sparking endless quirky memes across social media? They've helped to <strong>raise $1.8 million</strong> in the last five days for charitable organizations in Sanders' home state of Vermont, the independent senator announced Wednesday.</p>
 
 		<p>The sum comes from the sale of merchandise with the Jan. 20 image of him sitting with his arms and legs crossed, clad in his brown parka and recycled wool mittens.</p>
 
@@ -90,7 +112,7 @@ Date: 03.14.2024
 
 		<p>She also said she made three more pairs of mittens and donated them for fundraising to Passion 4 Paws Vermont, Outright Vermont, and would be auctioning off a pair on eBay for her daughter's college fund.</p>
 
-		<p>The groups that will benefit from the proceeds of the "Chairman Sanders" items include Area Agencies on Aging to fund Meals on Wheels throughout Vermont, Vermont community action agencies, Feeding Chittenden, Chill Foundation, senior centers in Vermont and Bi-State Primary Care for dental care improvements in the state, Sanders' office said.</p>
+		<p class="important">The groups that will benefit from the proceeds of the "Chairman Sanders" items include Area Agencies on Aging to fund Meals on Wheels throughout Vermont, Vermont community action agencies, Feeding Chittenden, Chill Foundation, senior centers in Vermont and Bi-State Primary Care for dental care improvements in the state, Sanders' office said.</p>
 
 		<p>Sander' attire has also sparked other charitable endeavors. A crocheted doll of Sanders in his garb was auctioned off online and Burton Snowboards donated 50 jackets to the Burlington Department for Children and Families in Sanders' name, his office said.</p>
 
