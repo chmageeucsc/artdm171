@@ -17,8 +17,7 @@ body {
   width: 75%;
  }
 
- /*the following rule will make the navigation background pale green, add an olive border to the left, and center the element
- 
+ /*the following rule will make the navigation background pale green, add an olive border to the left, and center the element 
  padding was also added for readability*/
  nav {
   background-color: rgb(210, 228, 204);
@@ -74,3 +73,5 @@ body {
   font-size: 1rem;
   font-weight: bold;
  }
+
+ 
