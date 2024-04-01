@@ -18,16 +18,26 @@ header{
 }
 /******************nav starts********************/
 nav ul{
-	
+	background-color: black;
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
 }
 nav li{
-	
+	display: inline-block;
+	margin: 0;
 }
 nav a:link, a:visited{
-	
+	color: white;
+	display: block;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	padding: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100px;
 }
 nav a:hover{
-	
+	background-color: gray;
 }
 /***************************nav ends**************************************/
 section{
