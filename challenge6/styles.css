@@ -4,10 +4,17 @@ body{
 	background-image:url(images/tileable_wood_texture.png);
 }
 #container{
-	
+	background-color: gray;
+	margin: 0 auto; /* aligns container to the center of the browser*/
+	width: 1000px;
+	/*padding: 10px;*/
 }
 header{
-	
+	background-color: teal;
+	height: 100px;
+	padding: 10px;
+	text-align: center;
+	width: 980px;
 }
 /******************nav starts********************/
 nav ul{
