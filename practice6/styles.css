@@ -4,10 +4,18 @@
   Date: 04.01.2024
 */
 
-/*the following rule will make the background light yellow and the text green*/
+/*the following rule will make the page background light yellow and the text green*/
 body {
   background-color: lightgoldenrodyellow;
   color: rgb(32, 87, 7);
+}
+
+/*the following rule will make the div background gray and align everything to the center*/
+#container{
+	background-color: antiquewhite;
+	margin: 0 auto; /* aligns container to the center of the browser*/
+	width: 1000px;
+	padding: 5px;
 }
 
 /*the following rule will make the main header dark red and center the element*/
@@ -26,6 +34,36 @@ body {
   width: 75%;
  }
 
+ nav ul {
+  background-color: black;
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
+ }
+
+ nav li {
+  display: inline-block;
+	margin: 0;
+  padding: 5px 10px;
+ }
+
+
+
+/* WORKING ON NAV STUFF */
+
+
+
+ nav a:link, a:visited{
+	color: white;
+	display: block;
+	padding: 3px 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	/* width: 100px; */
+}
+nav a:hover{
+	background-color: gray;
+
  /*the following rule will make the text 1.5 times bigger and center the element*/
  main {
   font-size: 1.5rem;
@@ -36,7 +74,7 @@ body {
  /*the following rule will make the header text smaller abnd add a green border to the left*/
  h1, h2 {
   border-left: 5px solid rgb(6, 125, 66);
-  font-size: x-large;
+  /* font-size: x-large; */
   padding-left: 10px;
  }
 
@@ -59,6 +97,10 @@ body {
   color: rgb(133, 53, 35);
   font-size: medium;
   font-weight: bold;
+ }
+
+ figure {
+
  }
 
  /*the following rule will make the imaage centered*/
