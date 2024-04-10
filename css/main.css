@@ -1,103 +1,106 @@
 /*<!--
   Student Name: Chantel Gee
   Assignment Name: Midterm Project: Course Website (Jump page)
-  Date: 04.09.2024
+  Date: 04.10.2024
 */
 
 /*the following rule */
 body {
-  
-}
-
-/*the following rule */
-#container{
-	
+  /* background-color: pink; */
+  /* background-image: url(images/sakura.png); */
+	/* background-repeat: repeat; */
+  margin: 0 auto;
+  padding: 10px 10px;
+  width: 80%
 }
 
 /*the following rule */
 figure {
-  
+  float: right;
+  padding: 10px;
 }
 
 /*the following rule */
 img {
-  
+  border: 5px solid rgb(87, 8, 8);
 }
 
 /*the following rule */
 header {
-  
+  color: rgb(33, 77, 172);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/*the following rule will give the navigation a dark green bordern and center everything*/
-nav {
-  border: 3px solid rgb(80, 93, 59);
-  margin: 24px auto;
-  /* padding: .5px 0; */
-  /* width: 75%; */
-}
-
-/*the following rule will make the navigation background dark red and remove the list bullets*/
-nav ul {
-  background-color: rgb(73, 45, 4);
-	list-style: none;
-	margin: 0 auto;
-	text-align: center;
-}
-
-/*the following rule will contain each list item in an inline block and update the font to Gill Sans*/
-nav li {
-  display: inline-block;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-	margin: 0;
-  padding: 5px 30px;
+header h1 {
+  color: rgb(139, 0, 0);
 }
 
 /*the following rule will make the items white and uppercase*/
-nav a:link, a:visited{
-	color: rgb(197, 23, 23);
-	display: block;
+a:link, a:visited{
+	color: rgb(165, 23, 197);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: inline-block;
 	padding: 3px 3px;
 	text-decoration: none;
 	text-transform: uppercase;
 	/* width: 100px; */
 }
 
-/*the following rule will give the link item background a pale orange with black text*/
-nav a:hover{
-	background-color: rgb(219, 206, 183);
-  color: black;
+/*the following rule will give the link item background a pale orange with black text*/a:hover{
+	background-color: rgb(254, 255, 232);
+  color: rgb(8, 44, 203);
   padding: 3px 3px;
 }
 
 /*the following rule */
 main {
-  
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
 }
 
 /*the following rule */
-h2 {
-  
+section h2 {
+  border-left: 5px solid;
+  color: rgb(76, 98, 207);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
 }
 
 /*the following rule */
-p {
-  
+section h3 {
+  border-left: 3px solid;
+  color: rgb(216, 93, 93);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 /*the following rule */
+section p {
+  color: rgb(60, 60, 64);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+strong {
+  color: mediumblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 footer {
-  
-}
-
-/*the following rule */
-em {
-  
-}
-
-/*the following rule */
-.important {
-  
+  background-color: antiquewhite;
+  color: rgb(75, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: .85rem;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
 }
 
  
