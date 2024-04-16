@@ -1,7 +1,7 @@
 /*
 Author: Chantel Gee
 Date: 04.16.24
-File Name: styles.css for responsive start
+File Name: styles.css for Challenge 7 - Fluid layout
 */
 
 /* CSS Reset */
@@ -16,23 +16,32 @@ body {
     background-color: #9cb6e8;
 }
 
-img {}
+img {
+    display: block;
+    max-width: 100%;
+}
 
 /* Style rules for mobile viewport */
 
 /* Style rule to hide tab-desk class */
-.tab-desk {}
+.tab-desk {
+    display: none;
+}
 
 /* Style rules for header content */
 header {
     text-align: center;
     color: #234b95; 
     background-color: #9cb6e8;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
     font-size: 3em;
     padding-top: 2%;
+    font-family: 'Cookie', cursive;
 }
 
 header h3 {
@@ -42,40 +51,71 @@ header h3 {
 }
 
 /* Style rules for navigation area */
-nav {}
+nav {
+    background-color: #234b95;
+}
 
-nav ul {}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
 
-nav li {}
+nav li {
+    border-top: 1px solid #93dfc6;
+    display: block;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 
-nav li:first-child{}
+nav li:first-child{
+    border-top: none;
+}
 
-nav li a {}
+nav li a {
+    color: white;
+    display: block;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+}
 
 /* Style rule for hero image */
-#hero {}
+#hero {
+    clear: left;
+}
 
 /* Style rules for main content */
-main {}
+main {
+    background-color: #e5e9fc;
+    font-family: sans-serif;
+    overflow: auto;
+    padding: 2%;
+}
 
 main h2 {
     color: #234b95;
+    font-size: 1.6em;
 }
 
 main p {
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 main ul {
+    font-size: 1.2em;
     list-style-type: square;
     margin: 10%;
 }
 
+ /* for contact page 
 .action {}
 
 .round {}
-
-#pamper, #full, #basic {}
+*/
+#pamper, #full, #basic {
+    margin: 0.2%;
+}
 
 
 /* Style rules for footer content */
