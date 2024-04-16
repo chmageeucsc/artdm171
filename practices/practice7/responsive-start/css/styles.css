@@ -23,9 +23,9 @@ img {
 
 /* Style rules for mobile viewport */
 
-/* Style rule to hide tab-desk class */
+/* Style rule for tab-desk class */
 .tab-desk {
-    display: none;
+    display:inline-block;
 }
 
 /* Style rules for header content */
@@ -105,23 +105,55 @@ main p {
 main ul {
     font-size: 1.2em;
     list-style-type: square;
-    margin: 10%;
+    margin: 5% 10%;
 }
 
  /* for contact page 
 .action {}
-
-.round {}
 */
+
+/* gives all images rounded corners */
+.round {
+    border-radius: 20px;
+}
+
 #pamper, #full, #basic {
     margin: 0.2%;
 }
 
+/* changes color to dark teal, makes font bigger, bolder, and serif, centers the text, and makes it uppercase */
+.service h2{ 
+    color: #226c7f;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* gives the images a teal border and makes the image fluid (covers the width of the screen) */
+.service img{ 
+    border: .25em solid #226c7f;
+    width: 100%;
+}
+
+/* makes bullet points look like dogs */
+.service ul{ 
+    list-style-type: '🐕';
+}
+
+/* matches color of header, uses sans-serif font, adds padding for spacing between bullet point and text */
+.service li{
+    color: #226c7f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    padding-left: 3%;
+ }
 
 /* Style rules for footer content */
 footer {
     text-align: center;
-    font-size: 0.85em;
+    font-size: 0.95em;
     clear: left;
     color: #234b95;
     font-weight: bold;
@@ -129,5 +161,7 @@ footer {
 
 footer a {
     color: #234b95;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
     text-decoration: none;
 }
