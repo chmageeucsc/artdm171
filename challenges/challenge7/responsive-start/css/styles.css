@@ -1,0 +1,93 @@
+/*
+Author:
+Date: 
+File Name: styles.css for responsive start
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #9cb6e8;
+}
+
+img {}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide tab-desk class */
+.tab-desk {}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    color: #234b95; 
+    background-color: #9cb6e8;
+}
+
+header h1 {
+    font-size: 3em;
+    padding-top: 2%;
+}
+
+header h3 {
+    font-style: italic;
+    font-size: 1.25em;
+    padding-bottom: 2%;
+}
+
+/* Style rules for navigation area */
+nav {}
+
+nav ul {}
+
+nav li {}
+
+nav li:first-child{}
+
+nav li a {}
+
+/* Style rule for hero image */
+#hero {}
+
+/* Style rules for main content */
+main {}
+
+main h2 {
+    color: #234b95;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main ul {
+    list-style-type: square;
+    margin: 10%;
+}
+
+.action {}
+
+.round {}
+
+#pamper, #full, #basic {}
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    clear: left;
+    color: #234b95;
+    font-weight: bold;
+}
+
+footer a {
+    color: #234b95;
+    text-decoration: none;
+}
