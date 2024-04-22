@@ -4,18 +4,29 @@
 		Date: 04.22.2024
 */
 
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, section, aside, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 /*the following rule will make the page background light yellow and the text green*/
 body {
   background-color: lightgoldenrodyellow;
   color: rgb(32, 87, 7);
 }
 
+#topOfPage {
+  display: inline-block;
+}
+
 /*the following rule will make the div background gray and align everything to the center*/
 #container{
 	background-color: antiquewhite;
 	margin: 0 auto; /* aligns container to the center of the browser*/
-	width: 1000px;
-	padding: 5px;
+	width: 80%;
+	padding: 1%;
 }
 
 /*the following rule align the image to the right*/
@@ -25,15 +36,14 @@ figure {
 
 /*the following rule will fit the images in the container and add a dark red container*/
 img {
-  border: 5px solid rgb(73, 45, 4);
+  border: .3em solid rgb(73, 45, 4);
   /* display: block; */
-  /* margin: 0 auto; */
+  margin: 1% auto;
   width: 90%;
 }
 
 /*the following rule will make the main header dark red and center the element*/
 header {
-  background-color: bisque;
   color: rgb(73, 45, 4);
   margin: 0 auto;
   text-align: center;
@@ -41,10 +51,7 @@ header {
 
 /*the following rule will give the navigation a dark green bordern and center everything*/
 nav {
-  border: 3px solid rgb(80, 93, 59);
-  margin: 24px auto;
-  /* padding: .5px 0; */
-  /* width: 75%; */
+  
 }
 
 /*the following rule will make the navigation background dark red and remove the list bullets*/
@@ -60,7 +67,7 @@ nav li {
   display: inline-block;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 	margin: 0;
-  padding: 5px 30px;
+  /* padding: 5px 30px; */
 }
 
 /*the following rule will make the items white and uppercase*/
@@ -89,7 +96,7 @@ main {
 
 /*the following rule will make the header text smaller and add a green border to the left*/
 h2 {
-  border-left: 5px solid rgb(6, 125, 66);
+  /* border-left: 5px solid rgb(6, 125, 66); */
   font-size: x-large;
   padding-left: 10px;
 }
@@ -122,4 +129,143 @@ em {
   font-weight: bold;
 }
 
+ /* Media Query for Tablet Viewport */
+@media screen and (min-width:620px), print {
  
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk {
+      display: block;
+  }
+
+  .mobile {
+      display: none;
+  }
+  
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+      border-top: none;
+      display: inline-block;
+      font-size: 1.25em;
+  }
+  
+  nav li a {
+      padding: 0.5em;
+  }
+  
+.grid{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+  }
+aside{
+      grid-column: 1 / span 2;
+  }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width:1024px), print {
+
+  /* Desktop Viewport: Show tab-desk class, hide mobile class */
+  .tablet-desktop {
+      display: block;
+  }
+
+  .mobile {
+      display: none;
+  }
+  
+  /* Desktop Viewport:Style rules for header content */
+  header {
+      color: rgb(100, 28, 28);
+      float: left;
+      text-align: center;
+      width: 27%;
+  }
+  
+  header h1 {
+      font-family: Garamond, times, serif;
+      font-size: 2.7em;
+      margin-top: 1.25em;
+  }
+
+  header h3 {
+      font-family: futura, arial, sans-serif;
+      font-style: italic;
+      font-size: 1.25em;
+  }
+
+  /* Desktop Viewport: Style rules for nav area */
+  nav {
+      background-color: rgb(73, 45, 4);
+      float: right;
+      width: 70%;
+  }   
+  
+  nav ul {
+      list-style-type: none;
+      margin: 5em 1em;
+      text-align: center;
+  }
+
+  nav li {
+      display: inline-block;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+  }
+
+  nav li a {
+      color: white;
+      display: block;
+      padding: 0.5em;
+      text-align: center;
+      text-decoration: none;
+  }
+  
+  nav li a:link {
+      color: white;
+  }
+  
+  nav li a:hover {
+      color: rgb(100, 28, 28);
+  }
+  
+  nav li a:active {
+      color: rgb(32, 87, 7);
+  }
+
+.grid{
+      grid-template-columns: auto auto auto auto;
+  }
+aside{
+      grid-column: 1 / span 4;
+  }
+
+}
+  /* Desktop Viewport: Style rules for main content */
+  #pamper, #full, #basic {
+      float: left;
+      margin: 0 2%;
+      width: 29%;
+  }
+
+/* Media Query for Large Desktop Viewports */
+/* @media screen and (min-width: 1920px), print {
+  body {
+      background-color: gray;
+  }
+  
+  #container {
+      margin: 0 auto;
+      width: 1920px;
+  }
+      
+  main {
+      background-color: #e5e9fc;
+  }
+  
+  footer, footer a {
+      color: #e5e9fc;
+  }
+} */

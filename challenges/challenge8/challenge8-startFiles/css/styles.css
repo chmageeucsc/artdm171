@@ -251,7 +251,7 @@ footer a {
     }
     
     nav li a:link {
-        counter-reset: white;
+        color: white;
     }
     
     nav li a:hover {
