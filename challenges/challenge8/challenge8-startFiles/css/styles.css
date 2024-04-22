@@ -1,7 +1,7 @@
 /*
-Author: firstName lastName
-Date:
-File Name: styles.css for challenge 8 start file
+Author: Chantel Gee
+Date: 04.22.24
+File Name: styles.css for Challenge 8 - Grids and media queries
 */
 
 /* CSS Reset */
@@ -157,63 +157,144 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-
+@media screen and (min-width:620px), print {
  
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
-    .tab-desk {}
+    .tab-desk {
+        display: block;
+    }
 
-    .mobile {}
+    .mobile {
+        display: none;
+    }
     
     /* Tablet Viewport: Style rules for nav area */
-    nav li {}
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
     
-    nav li a {}
+    nav li a {
+        padding: 0.5em;
+    }
     
-	.grid{}
-	aside{}
+	.grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+	aside{
+        grid-column: 1 / span 2;
+    }
+
+}
 
 /* Media Query for Desktop Viewport */
-    
-    /* Desktop Viewport: Show tab-desk class, hide mobile class */
-    .tablet-desktop {}
+@media screen and (min-width:1024px), print {
 
-    .mobile {}
+    /* Desktop Viewport: Show tab-desk class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
     
     /* Desktop Viewport:Style rules for header content */
-    header {}
+    header {
+        color: #234b95;
+        float: left;
+        text-align: center;
+        width: 27%;
+    }
     
-    header h1 {}
+    header h1 {
+        font-family: Garamond, times, serif;
+        font-size: 3em;
+        margin-top: 1.25em;
+    }
 
-    header h3 {}
+    header h3 {
+        font-family: futura, arial, sans-serif;
+        font-style: italic;
+        font-size: 1.25em;
+    }
 
     /* Desktop Viewport: Style rules for nav area */
-    nav {}
+    nav {
+        background-color: #234b95;
+        float: right;
+        width: 70%;
+    }   
     
-    nav ul {}
+    nav ul {
+        list-style-type: none;
+        margin: 5em 1em;
+        text-align: center;
+    }
 
-    nav li {}
+    nav li {
+        display: inline-block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
 
-    nav li a {}
+    nav li a {
+        color: white;
+        display: block;
+        padding: 0.5em;
+        text-align: center;
+        text-decoration: none;
+    }
     
-    nav li a:link {}
+    nav li a:link {
+        counter-reset: white;
+    }
     
-    nav li a:hover {}
+    nav li a:hover {
+        color: #cccfff;
+    }
     
-    nav li a:active {}
+    nav li a:active {
+        color: #ff99ff;
+    }
 	
-	.grid{}
-	aside{}
-    
+	.grid{
+        grid-template-columns: auto auto auto auto;
+    }
+	aside{
+        grid-column: 1 / span 4;
+    }
+
+}
     /* Desktop Viewport: Style rules for main content */
-    #pamper, #full, #basic {}
+    #pamper, #full, #basic {
+        float: left;
+        margin: 0 2%;
+        width: 29%;
+    }
 
 /* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1920px), print {
+    body {
+        background-color: gray;
+    }
     
-    body {}
-    
-    #container {}
+    #container {
+        margin: 0 auto;
+        width: 1920px;
+    }
         
-    main {}
+    main {
+        background-color: #e5e9fc;
+    }
     
-    footer, footer a {}
+    footer, footer a {
+        color: #e5e9fc;
+    }
+}    
+    
     
