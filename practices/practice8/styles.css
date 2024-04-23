@@ -17,21 +17,12 @@ body {
   color: rgb(32, 87, 7);
 }
 
-#topOfPage {
-  display: inline-block;
-}
-
 /*the following rule will make the div background gray and align everything to the center*/
 #container{
 	background-color: antiquewhite;
 	margin: 0 auto; /* aligns container to the center of the browser*/
 	width: 80%;
 	padding: 1%;
-}
-
-/*the following rule align the image to the right*/
-figure {
-  float: right;
 }
 
 /*the following rule will fit the images in the container and add a dark red container*/
@@ -49,11 +40,6 @@ header {
   text-align: center;
 }
 
-/*the following rule will give the navigation a dark green bordern and center everything*/
-nav {
-  
-}
-
 /*the following rule will make the navigation background dark red and remove the list bullets*/
 nav ul {
   background-color: rgb(73, 45, 4);
@@ -67,7 +53,7 @@ nav li {
   display: inline-block;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 	margin: 0;
-  /* padding: 5px 30px; */
+  padding: 0px 1%;
 }
 
 /*the following rule will make the items white and uppercase*/
@@ -98,7 +84,7 @@ main {
 h2 {
   /* border-left: 5px solid rgb(6, 125, 66); */
   font-size: x-large;
-  padding-left: 10px;
+  padding-left: 5%;
 }
 
 /*the following rule will make the text dark brown and change the font family to Cambria*/
@@ -129,36 +115,47 @@ em {
   font-weight: bold;
 }
 
+ /* Media Query for Moblie Viewport */
+ @media screen and (min-width:120px), print {
+  .desktopBR {
+    display: none;
+  }
+ }
+
  /* Media Query for Tablet Viewport */
 @media screen and (min-width:620px), print {
  
   /* Tablet Viewport: Show tab-desk class, hide mobile class */
   .tab-desk {
-      display: block;
+    display: block;
   }
 
   .mobile {
-      display: none;
+    display: none;
   }
   
   /* Tablet Viewport: Style rules for nav area */
   nav li {
-      border-top: none;
-      display: inline-block;
-      font-size: 1.25em;
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
   }
   
   nav li a {
-      padding: 0.5em;
+    padding: 0.5em;
   }
   
-.grid{
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-gap: 20px;
+  .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    }
+  aside{
+    grid-column: 1 / span 2;
   }
-aside{
-      grid-column: 1 / span 2;
+
+  .desktopBR {
+    display: none;
   }
 
 }
@@ -168,87 +165,85 @@ aside{
 
   /* Desktop Viewport: Show tab-desk class, hide mobile class */
   .tablet-desktop {
-      display: block;
+    display: block;
   }
 
   .mobile {
-      display: none;
+    display: none;
   }
   
   /* Desktop Viewport:Style rules for header content */
   header {
-      color: rgb(100, 28, 28);
-      float: left;
-      text-align: center;
-      width: 27%;
+    color: rgb(100, 28, 28);
+    float: left;
+    text-align: center;
+    width: 27%;
   }
   
   header h1 {
-      font-family: Garamond, times, serif;
-      font-size: 2.7em;
-      margin-top: 1.25em;
+    font-family: Garamond, times, serif;
+    font-size: 2.7em;
+    margin-top: 1.25em;
   }
 
   header h3 {
-      font-family: futura, arial, sans-serif;
-      font-style: italic;
-      font-size: 1.25em;
+    font-family: futura, arial, sans-serif;
+    font-style: italic;
+    font-size: 1.25em;
   }
 
   /* Desktop Viewport: Style rules for nav area */
   nav {
-      background-color: rgb(73, 45, 4);
-      float: right;
-      width: 70%;
+    background-color: rgb(73, 45, 4);
+    float: right;
+    width: 70%;
   }   
   
   nav ul {
-      list-style-type: none;
-      margin: 5em 1em;
-      text-align: center;
+    list-style-type: none;
+    margin: 5em 1em;
+    text-align: center;
   }
 
   nav li {
-      display: inline-block;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 1.5em;
-      font-weight: bold;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
   }
 
   nav li a {
-      color: white;
-      display: block;
-      padding: 0.5em;
-      text-align: center;
-      text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
   }
   
   nav li a:link {
-      color: white;
+    color: white;
   }
   
   nav li a:hover {
-      color: rgb(100, 28, 28);
+    color: rgb(100, 28, 28);
   }
   
   nav li a:active {
-      color: rgb(32, 87, 7);
+    color: rgb(32, 87, 7);
   }
 
-.grid{
-      grid-template-columns: auto auto auto auto;
+  .grid{
+    grid-template-columns: auto auto auto auto;
   }
-aside{
-      grid-column: 1 / span 4;
+  aside {
+    grid-column: 1/ span 2;
+  }
+
+  .desktopBR {
+    display:block;
   }
 
 }
-  /* Desktop Viewport: Style rules for main content */
-  #pamper, #full, #basic {
-      float: left;
-      margin: 0 2%;
-      width: 29%;
-  }
 
 /* Media Query for Large Desktop Viewports */
 /* @media screen and (min-width: 1920px), print {
