@@ -186,12 +186,6 @@ em {
     margin-top: 1.25em;
   }
 
-  header h3 {
-    font-family: futura, arial, sans-serif;
-    font-style: italic;
-    font-size: 1.25em;
-  }
-
   /* Desktop Viewport: Style rules for nav area */
   nav {
     background-color: rgb(73, 45, 4);
@@ -246,21 +240,37 @@ em {
 }
 
 /* Media Query for Large Desktop Viewports */
-/* @media screen and (min-width: 1920px), print {
+@media screen and (min-width: 1920px), print {
   body {
-      background-color: gray;
+    background-color: rgb(229, 198, 171);
   }
   
   #container {
-      margin: 0 auto;
-      width: 1920px;
+    margin: 0 auto;
+    width: 1920px;
   }
       
   main {
-      background-color: #e5e9fc;
+    background-color: rgb(247, 217, 173);
+    padding: 1% 5%;
+  }
+
+  header h1 {
+    text-align: right;
   }
   
   footer, footer a {
       color: #e5e9fc;
   }
-} */
+
+  .grid{
+    grid-template-columns: auto auto auto auto;
+  }
+  aside {
+    grid-column: 1/ span 2;
+  }
+
+  .desktopBR {
+    display:block;
+  }
+}
