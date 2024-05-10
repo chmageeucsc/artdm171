@@ -1,0 +1,12 @@
+/*<!--
+  Student Name: Chantel Gee
+		File Name: Project 2-Part 2: Website Development (CSS) 
+		Date: 05.10.2024
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, section, aside, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
