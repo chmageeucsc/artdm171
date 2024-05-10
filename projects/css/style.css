@@ -14,8 +14,8 @@ body, header, nav, main, footer, img, h1, h3, ul, section, aside, figure, figcap
 /* FONTS */
 .bakbak-one-regular {
   font-family: "Bakbak One", sans-serif;
-  font-weight: 400;
   font-style: normal;
+  font-weight: normal;
 }
 
 .barlow-thin {
@@ -126,6 +126,9 @@ body, header, nav, main, footer, img, h1, h3, ul, section, aside, figure, figcap
   font-style: italic;
 }
 
+body {
+  background-color: #2C2C2C;
+}
 
 /* website header */
 header img {
@@ -136,6 +139,7 @@ header h1 {
   color: #C9FF58;
   font-family: "Bakbak One", sans-serif;
   font-size: 3em;
+  font-weight: normal;
   padding: 45px 0;
   text-align: center;
 }
@@ -145,9 +149,31 @@ header {
   height: 160px;
 }
 
+footer {
+  background-color: #1A4B42;
+}
+
+/* Solid border */
+hr.solid {
+  border: .1px solid #C9FF58;
+}
+
+button {
+  background-color: #79B615;
+  color: white;
+  font-family: "Bakbak One", sans-serif;
+  font-weight: normal;
+  padding: 0 20px;
+}
+
+#mainContentNutrition {
+  margin-top: 10%;
+}
+
 /* nav bar */
 nav {
   background-color: #201F2C;
+  position: relative;
   text-align: center;
 }
 
@@ -158,23 +184,80 @@ nav ul {
 nav li {
   display: inline-block;
   font-family: "Bakbak One", sans-serif;
+  font-weight: normal;
   font-size: 24px;
-  font-weight: bold;
   padding: 35px 50px;
 }
 
 nav li a {
   display: inline-block;
-  color: #fff;
+  color: #C9FF58;
   padding: 0.5em 1em;
   text-decoration: none;
 }
 
+nav li a:active {
+  display: inline-block;
+  color: #5AFBDE;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* TEXT */
+
 p {
+  color: white;
   font-family: "Barlow", sans-serif;
 }
 
 strong {
+  color: #79B615;
   font-family: "Bakbak One", sans-serif;
   font-weight: normal;
+}
+
+h2 {
+  color: #5AFBDE;
+  font-family: "Bakbak One", sans-serif;
+  font-weight: normal;
+}
+
+h3 {
+  color: white;
+  font-family: "Bakbak One", sans-serif;
+  font-weight: normal;
+}
+
+h4 {
+  color: #C9FF58;
+  font-family: "Bakbak One", sans-serif;
+  font-weight: normal;
+}
+
+#mainContentNutrition {
+  color: white;
+  font-family: "Barlow", sans-serif;
+  padding: 40px;
+}
+
+#mainContentNutrition h2 {
+  text-align: center;
+}
+
+#mainContentNutrition img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#mainContentNutrition li {
+  color: white;
+  font-family: "Barlow", sans-serif;
+  padding-left: 18px;
+}
+
+#aside {
+  background-color: #3F3F3F;
+  padding: 24px 16px;
 }
