@@ -166,10 +166,6 @@ button {
   padding: 0 20px;
 }
 
-#mainContentNutrition {
-  margin-top: 10%;
-}
-
 /* nav bar */
 nav {
   background-color: #201F2C;
@@ -208,6 +204,7 @@ nav li a:active {
 p {
   color: white;
   font-family: "Barlow", sans-serif;
+  font-size: 1.25em;
 }
 
 strong {
@@ -219,6 +216,7 @@ strong {
 h2 {
   color: #5AFBDE;
   font-family: "Bakbak One", sans-serif;
+  font-size: 1.25em;
   font-weight: normal;
 }
 
@@ -234,9 +232,42 @@ h4 {
   font-weight: normal;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+/* Main Content in Index Page */
+
+#mainContentIndex {
+  color: white;
+  display: grid;
+  grid-template-rows: 35% 65%;
+  font-family: "Barlow", sans-serif;
+  padding: 40px;
+}
+
+.articleSection {
+  align-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.article {
+  align-content: center;
+  padding: 3%;
+}
+
+.articleImage {
+  width: 90%;
+}
+
+/* Main Content in Nutrition Page */
+
 #mainContentNutrition {
   color: white;
   font-family: "Barlow", sans-serif;
+  margin-top: 10%;
   padding: 40px;
 }
 
