@@ -128,10 +128,11 @@ body, header, nav, main, footer, img, h1, h3, ul, section, aside, figure, figcap
 
 body {
   background-color: #2C2C2C;
+  background-image: url("../images/background.jpg");
+  /* background from https://www.freepik.com/free-vector/black-hexagonal-grid-line-pattern-bold-industrial-wallpaper_38091753.htm#fromView=search&page=1&position=9&uuid=a38d7b7a-bdd1-4ea3-a686-0e4be2955ee8 */
 }
 
-/* website header */
-
+/* website footer */
 footer {
   background-color: #1A4B42;
   padding: 10px 15px;
@@ -198,12 +199,14 @@ footer p {
   font-size: 1em;
 }
 
+/* important parts of main text */
 strong {
   color: #79B615;
   font-family: "Bakbak One", sans-serif;
   font-weight: normal;
 }
 
+/* header */
 h2 {
   color: #5AFBDE;
   font-family: "Bakbak One", sans-serif;
@@ -212,6 +215,7 @@ h2 {
   text-align: center;
 }
 
+/* subheader */
 h3 {
   color: #79B615;
   font-family: "Bakbak One", sans-serif;
@@ -219,6 +223,7 @@ h3 {
   font-weight: normal;
 }
 
+/* aside headers */
 h4 {
   color: #79B615;
   font-family: "Bakbak One", sans-serif;
@@ -233,7 +238,7 @@ h4 {
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width:1039px), print {
+@media screen and (min-width:1020px), print {
   header img {
     float: left;
     padding: 20px;
@@ -316,7 +321,7 @@ h4 {
 }
 
 /* Media Query for Mobile Viewport */
-@media screen and (max-width: 1039px), print {
+@media screen and (max-width: 1020px), print {
  
   /* Tablet Viewport: Show tab-desk class, hide mobile class */
   .tab-desk {
