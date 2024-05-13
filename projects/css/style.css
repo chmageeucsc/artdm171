@@ -131,23 +131,6 @@ body {
 }
 
 /* website header */
-header img {
-  float: left;
-}
-
-header h1 {
-  color: #C9FF58;
-  font-family: "Bakbak One", sans-serif;
-  font-size: 3em;
-  font-weight: normal;
-  padding: 45px 0;
-  text-align: center;
-}
-
-header {
-  background-color: #1A4B42;
-  height: 160px;
-}
 
 footer {
   background-color: #1A4B42;
@@ -241,6 +224,7 @@ h4 {
   font-family: "Bakbak One", sans-serif;
   font-size: 1.25em;
   font-weight: normal;
+  margin: -.3em;
 }
 
 .quote {
@@ -248,62 +232,223 @@ h4 {
   font-weight: normal;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 75% 25%;
+/* Media Query for Desktop Viewport */
+@media screen and (min-width:1039px), print {
+  header img {
+    float: left;
+    padding: 20px;
+    width: 160px;
+  }
+  
+  header h1 {
+    color: #C9FF58;
+    font-family: "Bakbak One", sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 45px 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #1A4B42;
+    height: 30%;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+
+  #aside {
+    background-color: #3F3F3F;
+    padding: 24px 16px;
+  }
+
+  /* Main Content in Index Page */
+
+  #mainContentIndex {
+    color: white;
+    display: grid;
+    grid-template-rows: 35% 65%;
+    font-family: "Barlow", sans-serif;
+    padding: 10px 40px;
+  }
+
+  .articleSection {
+    align-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article {
+    align-content: center;
+    padding: 3%;
+  }
+
+  .articleImage {
+    width: 90%;
+  }
+
+  /* Main Content in Nutrition Page */
+
+  #mainContentNutrition {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    padding: 10px 40px;
+  }
+
+  #mainContentNutrition h2 {
+    text-align: center;
+  }
+
+  #mainContentNutrition img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #mainContentNutrition li {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    padding-left: 18px;
+  }
 }
 
-#aside {
-  background-color: #3F3F3F;
-  padding: 24px 16px;
-}
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 1039px), print {
+ 
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk {
+    display: block;
+  }
 
-/* Main Content in Index Page */
+  .mobile {
+    display: none;
+  }
 
-#mainContentIndex {
+  /* TEXT */
+
+p {
   color: white;
-  display: grid;
-  grid-template-rows: 35% 65%;
   font-family: "Barlow", sans-serif;
-  padding: 10px 40px;
+  font-size: 1em;
+}
+#aside p {
+  font-size: .95em;
 }
 
-.articleSection {
-  align-content: space-evenly;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+footer p {
+  font-size: .75em;
 }
 
-.article {
-  align-content: center;
-  padding: 3%;
+strong {
+  color: #79B615;
+  font-family: "Bakbak One", sans-serif;
+  font-weight: normal;
 }
 
-.articleImage {
-  width: 90%;
-}
-
-/* Main Content in Nutrition Page */
-
-#mainContentNutrition {
-  color: white;
-  font-family: "Barlow", sans-serif;
-  padding: 10px 40px;
-}
-
-#mainContentNutrition h2 {
+h2 {
+  color: #5AFBDE;
+  font-family: "Bakbak One", sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
   text-align: center;
 }
 
-#mainContentNutrition img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+h3 {
+  color: #79B615;
+  font-family: "Bakbak One", sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
-#mainContentNutrition li {
-  color: white;
-  font-family: "Barlow", sans-serif;
-  padding-left: 18px;
+h4 {
+  color: #79B615;
+  font-family: "Bakbak One", sans-serif;
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: -.3em;
+}
+
+.quote {
+  color: #C9FF58;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+  header img {
+    display: block;
+    margin: auto auto;
+    padding-top: 35px;
+    width: 40%
+  }
+  
+  header h1 {
+    color: #C9FF58;
+    font-family: "Bakbak One", sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    padding: 0 0 20px 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #1A4B42;
+    display: block;
+    height: 20%;
+  }
+
+  nav li {
+    display: block;
+    font-size: 1.2em;
+    padding: 0px;
+  }
+
+  /* Main Content in Index Page */
+  #mainContentIndex {
+    color: white;
+    display: grid;
+    font-family: "Barlow", sans-serif;
+    padding: 10px 40px;
+  }
+
+  .article {
+    align-content: center;
+  }
+
+  .articleImage {
+    width: 90%;
+  }
+
+  /* Main Content in Nutrition Page */
+
+  #mainContentNutrition {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    padding: 10px 40px;
+  }
+
+  #mainContentNutrition h2 {
+    text-align: center;
+  }
+
+  #mainContentNutrition img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+  }
+
+  #mainContentNutrition li {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    padding-left: 18px;
+  }
+
+  #aside {
+    background-color: #3F3F3F;
+    padding: 24px 24px;
+  }
+
 }
